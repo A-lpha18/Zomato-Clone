@@ -16,6 +16,27 @@ header li{
 .navbar a{
     color: white;
 }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+#user_pic{
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    justify-content: center;
+    justify-items: center;
+
+}
+@media only screen and(max-width: 600px){
+    #user_pic{
+        display: flex;
+    }
+    header li{
+        display: none;
+    }
+}    
+
 .hero_section{
     background-image: url(./asset/heroSectionBackground.png);
     background-size: cover;
