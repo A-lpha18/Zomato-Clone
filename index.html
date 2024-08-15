@@ -3,296 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zomato Landing page</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <title>Youtube Clone</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <section class="hero_section">
-        <header>
-            <nav class="navbar">
-                <a href="#">Get the App</a>
-                <div class="navbar_menu_cobtainer">
-                    <li><a href="#">Inventor Relation</a></li>
-                    <li><a href="#">Add Resutrant</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Signup</a></li>
-                    <li id="user_pic"><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARxJREFUSEvVlNENwjAMRN1NYBOYBJgEmAQ2oZvAJtAnxVIanFxU1A8i5aOJes++2B5s5TWsrG+9gI2Z3cxsZ2avtK/T96gC7AEck3ipBehuZoCqSwGI+JH+viQxsjlMZ3wDObUyUQBsIQMXzyP1zLBpX0tBAZ6TDUS8TdHmOpxzTxbch+sXAILvpFrVUQD85x0ii87pnIfmHRZlkNvgFZM/MqL4Xy1XlQECHmkUIZEDXlym/uOqjaaatXmvLMIeHpldLh8Z+F/t5hoAQZoMa3pWtaMjQD4eWqMAONuzDCsqAnj3Nus7S6ucTbOuLgFd8yXwLK+yWVOWAB9usr4DiFs7G34loDXc1GOHw68EyOElKF//qz5QUcv7/wd8AKJNRBl0Vm5MAAAAAElFTkSuQmCC"/></a></li>
+    <header class="header">
+        <div class="nav_left">
+                <div class="menu">
+                    <a href="#"><img src="./asset/menu.png" alt="" loading="lazy"></a>
                 </div>
-            </nav>
-        </header><br>
-        <div class="search_bar"><br>
-            <a href="./index.html"><img id="logzomato" src="./asset/8313a97515fcb0447d2d77c276532a511583262271.avif" alt="Zomato Logo"></a><br>
-            <h3 id="caption">Discover the best food & drinks in India</h3><br><br>
-            <div class="search_food">
-                <input type="text" id="location" placeholder="Enter Your City..." required>
-                <input type="text" id="food" placeholder="Search for a resturant,cuisine or dish..." required>
+                <div class="logo">
+                    <a href="./index.html"><img src="./asset/logo (1).png" alt="" loading="lazy"></a>
+                </div>
+        </div>
+        <div class="nav_middle">
+            <div class="search_bar d-flex">
+                <input type="text" id="search_it" placeholder="Search" required >
+                <a href="#"><img src="./asset/search.png" alt="" class="sear" loading="lazy"></a>
+            </div>
+            <div class="voice">
+                <a href="#"><img src="./asset/voice-search.png" alt="" loading="lazy"></a>
+            </div>
+        </div>
+        <div class="nav_right">
+            <div class="uplord">
+                <a href="#"><img src="./asset/upload.png" alt="" loading="lazy"></a>
+            </div>
+            <div class="bell">
+                <a href="#"><img src="./asset/notification.png" alt="" loading="lazy"></a>
+            </div>
+            <div class="profile">
+                <a href="#"><img src="./asset/profile.png" alt="" loading="lazy"></a>
+            </div>
+        </div>
+    </header>
+    <!-- Sidebar -->
+     <div class="sidebar">
+        <div class="sidebar_upper">
+            <div class="item1">
+                <a href="#" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANVJREFUSEvtld0NwjAMhK+b0E1gE5ikMAkwCd0ENoGeFCMn5MemygvCj5Fz3zmxkwGdY+isDy/gFgwdADws5jwAim+D6AzABLECtLgYPwK4tiqxAM6LyL5wHIScakfVAkzLZorUogqpAeia7i1RhJQAvEzpGAuAObz0S5qcA3wjLrpjeukpYAPgbrWcyeNs7DREA9aKCy+CaECtHb1FcRBZSfRUdAdol0+v5ZD/0TSlNv1NQFptrspVR/QHRI3J54KTLfEeHLVmyXH/ye7xaH04bsF0wwtRSSsZx/alhwAAAABJRU5ErkJggg==" height="20px" width="20px"/>Home</a>
+            </div>
+            <div class="item2">
+                <a href="#"><img src="./asset/youtube-shorts-logo-15253.png" height="30px" width="30px"/>Shorts</a>
+            </div>
+            <div class="item3">
+            <a href="#" class="d-flex"><img src="./asset/playlist.webp" height="20px" width="30px"/>Subscription</a>
+            </div>
+        </div>
+        <hr>
+        <div class="sidebar_middle">
+            <div class="item1">
+                <a href="#" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANVJREFUSEvtld0NwjAMhK+b0E1gE5ikMAkwCd0ENoGeFCMn5MemygvCj5Fz3zmxkwGdY+isDy/gFgwdADws5jwAim+D6AzABLECtLgYPwK4tiqxAM6LyL5wHIScakfVAkzLZorUogqpAeia7i1RhJQAvEzpGAuAObz0S5qcA3wjLrpjeukpYAPgbrWcyeNs7DREA9aKCy+CaECtHb1FcRBZSfRUdAdol0+v5ZD/0TSlNv1NQFptrspVR/QHRI3J54KTLfEeHLVmyXH/ye7xaH04bsF0wwtRSSsZx/alhwAAAABJRU5ErkJggg==" height="20px" width="20px"/>Home</a>
+            </div>
+            <div class="item2">
+                <a href="#"><img src="./asset/youtube-shorts-logo-15253.png" height="30px" width="30px"/>Shorts</a>
+            </div>
+            <div class="item3">
+            <a href="#" class="d-flex"><img src="./asset/playlist.webp" height="20px" width="30px"/>Subscription</a>
+            </div>
+        </div>
+        <div class="sidebar_lower">
 
-            </div>
         </div>
-    </section><br><br>
-    <section class="item_section">
-        <div class="item1">
-            <a href="#"><img src="./asset/item1.png" alt="Stream Food" loading="lazy"></a>
-            <h3>Order Online</h3>
-            <p>Stay home and order to your doorstep</p>
-        </div>
-        <div class="item2">
-            <img src="./asset/item2.png" alt="ds">
-            <h3>Dining</h3>
-            <p>View the citys favourite dining venue</p>
-        </div>
-        <div class="item3">
-            <img src="./asset/item3.png" alt="sf">
-            <h3>Nightlife and clubs</h3>
-            <p>Explore the citys top nightlife outlets</p>
-        </div>
-        
-    </section><br><br>
-    <section class="collection">
-        <div class="cc">
-            <h3 id="dsfg">Collections</h3>
-            <p id="dsfg">Explore curated lists of top restaurants, cafes, pubs, and bars in Kolkata, based on trends</p>
-        </div><div class="container">
-            <div class="collection1">
-                <img src="./asset/1abd83e8e4dfd12c6f5f10e2372a31b7_1709810540.avif" alt="collection">
-                <h3 id="dsfg">Top Trending Spots</h3>
-                <p id="dsfg">37 Places</p>
-            </div>
-            <div class="collection2">
-                <img src="./asset/collection2.jpg" alt="collection">
-                <h3 id="dsfg">Top Trending Spots</h3>
-                <p id="dsfg">37 Places</p>
-            </div>
-            <div class="collection3">
-                <img src="./asset/collection3.jpg" alt="collection">
-                <h3 id="dsfg">Top Trending Spots</h3>
-                <p id="dsfg">37 Places</p>
-            </div>
-            <div class="collection4">
-                <img src="./asset/collection4.jpg" alt="collection">
-                <h3 id="dsfg">Top Trending Spots</h3>
-                <p id="dsfg">37 Places</p>
-            </div>
-        </div>
-        
-    </section>
-    <section class="location">
-        <div class="head">
-                <p>Popular localities in and around Kolkata</p>
-            </div>
-        <section class="main_contents">
-        <div class="places1">
-            <div class="place1">
-                <div class="qer">
-                <a href="#"><p id="dfs">Park Street Area</p>
-                <p>190 places</p></a>
-                </div>
-                <div class="sfy">
-                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJVJREFUSEvt1MENQEAQheF/O6ETOtEJnaASrShFJtmIOOzOm2QTBy4um/eZN0g0vlLjfH6g2vCnKpqBHTirj/044J3AwpccPiqIF+iAA7C7TeBGvIANHUIUIISogIxEgRUY8j760lulArYHd7jBCiCHK0AoXAGmXI19A8XO3/tQKjJkU34TygRq7n1emSCE/EC1tuYVXQkmHBmwQjpBAAAAAElFTkSuQmCC"/></a>
-                </div>
-            </div>
-            <div class="place2">
-                <div class="ncd">
-                    <a href="#">
-                        <p>Sector 5,Salt Lake</p>
-                        <p>266, places</p>
-                    </a>
-                </div>
-                <div class="pte">
-                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJVJREFUSEvt1MENQEAQheF/O6ETOtEJnaASrShFJtmIOOzOm2QTBy4um/eZN0g0vlLjfH6g2vCnKpqBHTirj/044J3AwpccPiqIF+iAA7C7TeBGvIANHUIUIISogIxEgRUY8j760lulArYHd7jBCiCHK0AoXAGmXI19A8XO3/tQKjJkU34TygRq7n1emSCE/EC1tuYVXQkmHBmwQjpBAAAAAElFTkSuQmCC"/></a>
-                </div>
-            </div>
-            <div class="place3">
-                <div class="ncd">
-                    <a href="#">
-                        <p>Sector 5,Salt Lake</p>
-                        <p>266, places</p>
-                    </a>
-                </div>
-                <div class="pte">
-                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJVJREFUSEvt1MENQEAQheF/O6ETOtEJnaASrShFJtmIOOzOm2QTBy4um/eZN0g0vlLjfH6g2vCnKpqBHTirj/044J3AwpccPiqIF+iAA7C7TeBGvIANHUIUIISogIxEgRUY8j760lulArYHd7jBCiCHK0AoXAGmXI19A8XO3/tQKjJkU34TygRq7n1emSCE/EC1tuYVXQkmHBmwQjpBAAAAAElFTkSuQmCC"/></a>
-                </div></div>
-            </div>
-            <div class="places2">
-                <div class="place4">
-                <div class="ncd">
-                    <a href="#">
-                        <p>Sector 5,Salt Lake</p>
-                        <p>266, places</p>
-                    </a>
-                </div>
-                <div class="pte">
-                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJVJREFUSEvt1MENQEAQheF/O6ETOtEJnaASrShFJtmIOOzOm2QTBy4um/eZN0g0vlLjfH6g2vCnKpqBHTirj/044J3AwpccPiqIF+iAA7C7TeBGvIANHUIUIISogIxEgRUY8j760lulArYHd7jBCiCHK0AoXAGmXI19A8XO3/tQKjJkU34TygRq7n1emSCE/EC1tuYVXQkmHBmwQjpBAAAAAElFTkSuQmCC"/></a>
-                </div>
-            </div>
-            <div class="place5">
-                <div class="ncd">
-                    <a href="#">
-                        <p>Sector 5,Salt Lake</p>
-                        <p>266, places</p>
-                    </a>
-                </div>
-                <div class="pte">
-                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJVJREFUSEvt1MENQEAQheF/O6ETOtEJnaASrShFJtmIOOzOm2QTBy4um/eZN0g0vlLjfH6g2vCnKpqBHTirj/044J3AwpccPiqIF+iAA7C7TeBGvIANHUIUIISogIxEgRUY8j760lulArYHd7jBCiCHK0AoXAGmXI19A8XO3/tQKjJkU34TygRq7n1emSCE/EC1tuYVXQkmHBmwQjpBAAAAAElFTkSuQmCC"/></a>
-                </div>
-            </div>
-            <div class="place6">
-                <div class="ncd">
-                    <a href="#">
-                        <p>Sector 5,Salt Lake</p>
-                        <p>266, places</p>
-                    </a>
-                </div>
-                <div class="pte">
-                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJVJREFUSEvt1MENQEAQheF/O6ETOtEJnaASrShFJtmIOOzOm2QTBy4um/eZN0g0vlLjfH6g2vCnKpqBHTirj/044J3AwpccPiqIF+iAA7C7TeBGvIANHUIUIISogIxEgRUY8j760lulArYHd7jBCiCHK0AoXAGmXI19A8XO3/tQKjJkU34TygRq7n1emSCE/EC1tuYVXQkmHBmwQjpBAAAAAElFTkSuQmCC"/></a>
-                </div>
-            </div></div>
-            <div class="places3">
-            <div class="place7">
-                <div class="ncd">
-                    <a href="#">
-                        <p>Sector 5,Salt Lake</p>
-                        <p>266, places</p>
-                    </a>
-                </div>
-                <div class="pte">
-                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJVJREFUSEvt1MENQEAQheF/O6ETOtEJnaASrShFJtmIOOzOm2QTBy4um/eZN0g0vlLjfH6g2vCnKpqBHTirj/044J3AwpccPiqIF+iAA7C7TeBGvIANHUIUIISogIxEgRUY8j760lulArYHd7jBCiCHK0AoXAGmXI19A8XO3/tQKjJkU34TygRq7n1emSCE/EC1tuYVXQkmHBmwQjpBAAAAAElFTkSuQmCC"/></a>
-                </div>
-            </div>
-            <div class="place8">
-                <div class="ncd">
-                    <a href="#">
-                        <p>Sector 5,Salt Lake</p>
-                        <p>266, places</p>
-                    </a>
-                </div>
-                <div class="pte">
-                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJVJREFUSEvt1MENQEAQheF/O6ETOtEJnaASrShFJtmIOOzOm2QTBy4um/eZN0g0vlLjfH6g2vCnKpqBHTirj/044J3AwpccPiqIF+iAA7C7TeBGvIANHUIUIISogIxEgRUY8j760lulArYHd7jBCiCHK0AoXAGmXI19A8XO3/tQKjJkU34TygRq7n1emSCE/EC1tuYVXQkmHBmwQjpBAAAAAElFTkSuQmCC"/></a>
-                </div>
-            </div>
-            <div class="seemore">
-                <div class="ncd">
-                    <a href="#">
-                        <p>Sector 5,Salt Lake</p>
-                        <p>266, places</p>
-                    </a>
-                </div>
-                <div class="pte">
-                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJVJREFUSEvt1MENQEAQheF/O6ETOtEJnaASrShFJtmIOOzOm2QTBy4um/eZN0g0vlLjfH6g2vCnKpqBHTirj/044J3AwpccPiqIF+iAA7C7TeBGvIANHUIUIISogIxEgRUY8j760lulArYHd7jBCiCHK0AoXAGmXI19A8XO3/tQKjJkU34TygRq7n1emSCE/EC1tuYVXQkmHBmwQjpBAAAAAElFTkSuQmCC"/></a>
-                </div>
-            </div>
-        </div></section>
-    </section>
-    <section class="app_in">
-        <div class="main_content">
-            <div class="content">
-                <div class="image">
-                    <img id="nbx" src="./asset/mobileBanner.png" loading="auto" alt="Mobile app">
-                </div>
-                <div class="dfgh">
-                    <div class="wrt">
-                    <h2>Get the Zomato app</h2>
-                    <h5>We will send you a link, open it on your phone to download the app</h5><br>
-                    <input type="radio" name="email" required style="accent-color: red;"><label for="email">Email</label>
-                    <input type="radio" name="email" required style="accent-color: red;"><label for="email">Phone no</label>
-                </div>
-                    <div class="tie">
-                        <input type="email" id="link" placeholder="Email/Phone" required>
-                        <button onclick="clickit()">Share App Link</button>
-                    </div><br>
-                    <div class="ouy"><p>Download app from</p>
-                    </div>
-                    <div class="uypt">
-                    <div class="img1">
-                        <img src="./asset/appleStore.png" id="yrh" loading="auto" alt="Android App"></div>
-                        <div class="img2">
-                        <img src="./asset/playStore.png" id="wge" loading="auto" alt="Playstore"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="footer_cotainer">
-        <div class="uiug">
-        <div class="footer_logo">
-            <img src="./asset/logo.png" alt="Zomato Logo" loading="lazy">
-        </div>
-        <div class="country">
-            <button>
-                <div class="ert">
-                <img src="./asset/flag.png" alt="India Logo" loading="lazy"></div>
-                <div class="uet">
-                <p>India</p></div>
-            </button>
-        </div>
-        <div class="lang">
-            <button class="ree">
-                <div class="et4">
-                    <i class="fa fa-internet-explorer"></i></div>
-                <div class="ueg">
-                    <p>English</p></div>
-            </button>
-        </div>
-        </div><br>
-        <div class="footer">
-            <div class="footeritem">
-                <div class="column1">
-                    <p>ABOUR ZOMATO</p>      
-                    <a href="#">Who We Are</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Work With Us</a>
-                    <a href="#">Invester Relation</a>
-                    <a href="#">Press Kit</a>
-                    <a href="#">Contact Us</a>
-                </div>
-                <div class="column1">
-                    <p>ZOMAVERSE</p>      
-                    <a href="#">Zomato</a>
-                    <a href="#">BlinkIt</a>
-                    <a href="#">Feeding India</a>
-                    <a href="#">Hyperpure</a>
-                    <a href="#">Zomaland</a>
-                    <a href="#">Weather Union</a>
-                </div>
-                <div class="column1">
-                    <p>FOR RESTRUANT</p>      
-                    <a href="#">Partnar With Us</a>
-                    <a href="#">Apps For Us</a>
-                </div>
-                <div class="column1">
-                    <p>LEARN MORE</p>      
-                    <a href="#">Privacy</a>
-                    <a href="#">Security</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Sitermap</a>
-                </div>
-                <div class="column5"> 
-                    <P>SOCIAL LINKS</P> 
-                    <div class="social_app">   
-                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="#"><i class='bx bxl-instagram'></i></a>
-                    <a href="#"><i class='bx bxl-twitter' ></i></a>
-                    <a href="#"><i class='bx bxl-youtube' ></i></a>
-                    <a href="#"><i class='bx bxl-facebook' ></i></a>
-                    </div><br>
-                    <div class="footer_img1">
-                        <img src="./asset/appleStore (1).png" alt="" loading="lazy">
-                    </div>
-                    <div class="footer_img2">
-                        <img src="./asset/playStore.png" alt="" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="end">
-        <hr id="hr">
-        <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All rights reserved.</p>
-    </div>
-
-    </section>
-    <script src="./script.js"></script>
+     </div>
 </body>
 </html>
